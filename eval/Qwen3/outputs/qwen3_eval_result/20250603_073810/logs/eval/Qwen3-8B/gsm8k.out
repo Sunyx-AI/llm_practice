@@ -1,0 +1,7 @@
+INFO 06-03 08:00:20 [__init__.py:243] Automatically detected platform cuda.
+No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+06/03 08:00:23 - OpenCompass - [4m[97mINFO[0m - Try to load the data from /root/.cache/opencompass/./data/gsm8k/
+Parameter 'function'=<function OpenICLEvalTask._score.<locals>.postprocess at 0x7f0375197eb0> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|██████████| 10/10 [00:00<00:00, 3456.08 examples/s]
+06/03 08:00:23 - OpenCompass - [5m[4m[31mERROR[0m - /usr/local/miniconda3/envs/py310/lib/python3.10/site-packages/opencompass/tasks/openicl_eval.py - _score - 290 - Task [Qwen3-8B/gsm8k]: No predictions found.
+06/03 08:00:23 - OpenCompass - [4m[97mINFO[0m - time elapsed: 6.44s

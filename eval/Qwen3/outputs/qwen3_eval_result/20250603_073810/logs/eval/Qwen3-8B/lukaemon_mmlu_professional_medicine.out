@@ -1,0 +1,5 @@
+INFO 06-03 08:02:08 [__init__.py:243] Automatically detected platform cuda.
+No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+06/03 08:02:11 - OpenCompass - [4m[97mINFO[0m - Try to load the data from /root/.cache/opencompass/./data/mmlu/
+06/03 08:02:11 - OpenCompass - [4m[97mINFO[0m - Task [Qwen3-8B/lukaemon_mmlu_professional_medicine]: {'accuracy': 100.0}
+06/03 08:02:11 - OpenCompass - [4m[97mINFO[0m - time elapsed: 6.29s

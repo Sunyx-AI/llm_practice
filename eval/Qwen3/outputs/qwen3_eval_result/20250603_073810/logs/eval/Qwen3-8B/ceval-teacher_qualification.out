@@ -1,0 +1,26 @@
+INFO 06-03 07:59:05 [__init__.py:243] Automatically detected platform cuda.
+No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+06/03 07:59:08 - OpenCompass - [4m[97mINFO[0m - ./data/ceval/formal_ceval does not exist!Start Download data automatically!If you have downloaded the data before,You can specific `COMPASS_DATA_CACHE` to avoid downloading~
+Traceback (most recent call last):
+  File "/usr/local/miniconda3/envs/py310/lib/python3.10/site-packages/opencompass/tasks/openicl_eval.py", line 462, in <module>
+    inferencer.run()
+  File "/usr/local/miniconda3/envs/py310/lib/python3.10/site-packages/opencompass/tasks/openicl_eval.py", line 114, in run
+    self._score()
+  File "/usr/local/miniconda3/envs/py310/lib/python3.10/site-packages/opencompass/tasks/openicl_eval.py", line 117, in _score
+    test_set = build_dataset_from_cfg(self.dataset_cfg).test
+  File "/usr/local/miniconda3/envs/py310/lib/python3.10/site-packages/opencompass/utils/build.py", line 13, in build_dataset_from_cfg
+    return LOAD_DATASET.build(dataset_cfg)
+  File "/usr/local/miniconda3/envs/py310/lib/python3.10/site-packages/mmengine/registry/registry.py", line 570, in build
+    return self.build_func(cfg, *args, **kwargs, registry=self)
+  File "/usr/local/miniconda3/envs/py310/lib/python3.10/site-packages/mmengine/registry/build_functions.py", line 121, in build_from_cfg
+    obj = obj_cls(**args)  # type: ignore
+  File "/usr/local/miniconda3/envs/py310/lib/python3.10/site-packages/opencompass/datasets/base.py", line 12, in __init__
+    self.dataset = self.load(**kwargs)
+  File "/usr/local/miniconda3/envs/py310/lib/python3.10/site-packages/opencompass/datasets/ceval.py", line 19, in load
+    path = get_data_path(path, local_mode=local_mode)
+  File "/usr/local/miniconda3/envs/py310/lib/python3.10/site-packages/opencompass/utils/datasets.py", line 52, in get_data_path
+    return download_dataset(local_path, cache_dir)
+  File "/usr/local/miniconda3/envs/py310/lib/python3.10/site-packages/opencompass/utils/datasets.py", line 90, in download_dataset
+    assert dataset_name, f'No valid url for {data_path}!\n' + \
+AssertionError: No valid url for ./data/ceval/formal_ceval!
+Please make sure  `./data/ceval/formal_ceval` is correct

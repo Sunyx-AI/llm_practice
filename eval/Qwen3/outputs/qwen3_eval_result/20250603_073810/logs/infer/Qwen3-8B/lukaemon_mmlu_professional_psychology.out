@@ -1,0 +1,11 @@
+06/03 07:47:49 - OpenCompass - [4m[97mINFO[0m - Task [Qwen3-8B/lukaemon_mmlu_professional_psychology]
+INFO 06-03 07:47:52 [__init__.py:243] Automatically detected platform cuda.
+06/03 07:47:54 - OpenCompass - [5m[4m[33mWARNING[0m - Max Completion tokens for Qwen3-8B is :16384
+No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+06/03 07:47:56 - OpenCompass - [4m[97mINFO[0m - Try to load the data from /root/.cache/opencompass/./data/mmlu/
+06/03 07:47:56 - OpenCompass - [4m[97mINFO[0m - Start inferencing [Qwen3-8B/lukaemon_mmlu_professional_psychology]
+  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 229196.94it/s]
+[2025-06-03 07:47:56,135] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-06-03 07:47:56,136] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:17<00:00, 17.50s/it]100%|██████████| 1/1 [00:17<00:00, 17.50s/it]
+06/03 07:48:13 - OpenCompass - [4m[97mINFO[0m - time elapsed: 24.11s

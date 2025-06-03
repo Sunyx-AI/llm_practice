@@ -1,0 +1,11 @@
+06/03 07:51:33 - OpenCompass - [4m[97mINFO[0m - Task [Qwen3-8B/lukaemon_mmlu_moral_disputes]
+INFO 06-03 07:51:37 [__init__.py:243] Automatically detected platform cuda.
+06/03 07:51:39 - OpenCompass - [5m[4m[33mWARNING[0m - Max Completion tokens for Qwen3-8B is :16384
+No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+06/03 07:51:40 - OpenCompass - [4m[97mINFO[0m - Try to load the data from /root/.cache/opencompass/./data/mmlu/
+06/03 07:51:40 - OpenCompass - [4m[97mINFO[0m - Start inferencing [Qwen3-8B/lukaemon_mmlu_moral_disputes]
+  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 332881.27it/s]
+[2025-06-03 07:51:40,455] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-06-03 07:51:40,455] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:30<00:00, 30.34s/it]100%|██████████| 1/1 [00:30<00:00, 30.34s/it]
+06/03 07:52:10 - OpenCompass - [4m[97mINFO[0m - time elapsed: 37.19s

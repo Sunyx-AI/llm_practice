@@ -1,0 +1,10 @@
+06/03 07:38:26 - OpenCompass - [4m[97mINFO[0m - Task [Qwen3-8B/ARC-c]
+INFO 06-03 07:38:30 [__init__.py:243] Automatically detected platform cuda.
+06/03 07:38:32 - OpenCompass - [5m[4m[33mWARNING[0m - Max Completion tokens for Qwen3-8B is :16384
+No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+06/03 07:38:34 - OpenCompass - [4m[97mINFO[0m - Try to load the data from /root/.cache/opencompass/./data/ARC/ARC-c/ARC-Challenge-Dev.jsonl
+06/03 07:38:34 - OpenCompass - [4m[97mINFO[0m - Start inferencing [Qwen3-8B/ARC-c]
+[2025-06-03 07:38:34,133] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-06-03 07:38:34,133] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:29<00:00, 29.10s/it]100%|██████████| 1/1 [00:29<00:00, 29.10s/it]
+06/03 07:39:03 - OpenCompass - [4m[97mINFO[0m - time elapsed: 36.53s

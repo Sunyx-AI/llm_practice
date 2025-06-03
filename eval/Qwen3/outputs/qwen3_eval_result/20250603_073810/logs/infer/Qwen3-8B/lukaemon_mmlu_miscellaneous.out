@@ -1,0 +1,36 @@
+06/03 07:51:39 - OpenCompass - [4m[97mINFO[0m - Task [Qwen3-8B/lukaemon_mmlu_miscellaneous]
+INFO 06-03 07:51:42 [__init__.py:243] Automatically detected platform cuda.
+06/03 07:51:44 - OpenCompass - [5m[4m[33mWARNING[0m - Max Completion tokens for Qwen3-8B is :16384
+No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+06/03 07:51:46 - OpenCompass - [4m[97mINFO[0m - Try to load the data from /root/.cache/opencompass/./data/mmlu/
+06/03 07:51:46 - OpenCompass - [4m[97mINFO[0m - Start inferencing [Qwen3-8B/lukaemon_mmlu_miscellaneous]
+  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 346636.69it/s]
+[2025-06-03 07:51:46,155] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-06-03 07:51:46,155] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/1 [00:00<?, ?it/s]  0%|          | 0/1 [01:03<?, ?it/s]
+Traceback (most recent call last):
+  File "/usr/local/miniconda3/envs/py310/lib/python3.10/site-packages/opencompass/tasks/openicl_infer.py", line 161, in <module>
+    inferencer.run()
+  File "/usr/local/miniconda3/envs/py310/lib/python3.10/site-packages/opencompass/tasks/openicl_infer.py", line 89, in run
+    self._inference()
+  File "/usr/local/miniconda3/envs/py310/lib/python3.10/site-packages/opencompass/tasks/openicl_infer.py", line 128, in _inference
+    inferencer.inference(retriever,
+  File "/usr/local/miniconda3/envs/py310/lib/python3.10/site-packages/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 153, in inference
+    results = self.model.generate_from_template(
+  File "/usr/local/miniconda3/envs/py310/lib/python3.10/site-packages/opencompass/models/base.py", line 201, in generate_from_template
+    return self.generate(inputs, max_out_len=max_out_len, **kwargs)
+  File "/usr/local/miniconda3/envs/py310/lib/python3.10/site-packages/opencompass/models/openai_api.py", line 176, in generate
+    results = list(
+  File "/usr/local/miniconda3/envs/py310/lib/python3.10/concurrent/futures/_base.py", line 621, in result_iterator
+    yield _result_or_cancel(fs.pop())
+  File "/usr/local/miniconda3/envs/py310/lib/python3.10/concurrent/futures/_base.py", line 319, in _result_or_cancel
+    return fut.result(timeout)
+  File "/usr/local/miniconda3/envs/py310/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/local/miniconda3/envs/py310/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/local/miniconda3/envs/py310/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/miniconda3/envs/py310/lib/python3.10/site-packages/opencompass/models/openai_api.py", line 321, in _generate
+    return response['choices'][0]['message']['content'].strip()
+AttributeError: 'NoneType' object has no attribute 'strip'

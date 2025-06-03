@@ -9,6 +9,11 @@ This project aims to systematically implement and explore key technologies in la
 │       └── qwen2.5        # 对应的模型
             └── lora.ipynb     # 微调代码
             └── output         # 训练后得到的结果
+├── eval/                  # 用于评测模型性能
+│   ├── huanhuan-100.json  # 嬛嬛指令数据集
+
+
+
 ├── dataset/               # 用于训练的代码
 │   ├── huanhuan-100.json  # 嬛嬛指令数据集
 │   ├── huanhuan.json/     # 嬛嬛指令数据集

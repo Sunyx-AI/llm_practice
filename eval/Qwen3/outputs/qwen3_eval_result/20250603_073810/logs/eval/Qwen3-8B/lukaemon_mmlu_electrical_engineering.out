@@ -1,0 +1,5 @@
+INFO 06-03 08:00:35 [__init__.py:243] Automatically detected platform cuda.
+No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+06/03 08:00:38 - OpenCompass - [4m[97mINFO[0m - Try to load the data from /root/.cache/opencompass/./data/mmlu/
+06/03 08:00:38 - OpenCompass - [5m[4m[31mERROR[0m - /usr/local/miniconda3/envs/py310/lib/python3.10/site-packages/opencompass/tasks/openicl_eval.py - _score - 290 - Task [Qwen3-8B/lukaemon_mmlu_electrical_engineering]: No predictions found.
+06/03 08:00:38 - OpenCompass - [4m[97mINFO[0m - time elapsed: 6.85s
