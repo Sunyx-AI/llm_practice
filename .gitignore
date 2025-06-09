@@ -3,3 +3,7 @@
 *.pth
 *output
 *ouputs
+.qdrant-initialized
+qdrant
+qdrant-x86_64-unknown-linux-musl.tar
+storage
